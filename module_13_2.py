@@ -4,8 +4,8 @@ import asyncio
 
 
 api = '***'
-bot = aiogram.Bot(token=api)
-dp = aiogram.Dispatcher(bot, storage=MemoryStorage())
+bot = Bot(token=api)
+dp = Dispatcher(bot, storage=MemoryStorage())
 
 
 @dp.message_handler(commands=['start'])
